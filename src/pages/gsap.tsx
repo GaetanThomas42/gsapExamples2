@@ -8,7 +8,7 @@ export default function GSAPPage() {
     const boxes = boxesRef.current?.children;
     if (!boxes) return;
 
-    gsap.to([...boxes], {
+    gsap.to(Array.from(boxes), {
       scale: 1,
       duration: 1,
       stagger: 0.2,
