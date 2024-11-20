@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/parallax": "pages/parallax.js",
+  "/text-effects": "pages/text-effects.js",
+  "/three": "pages/three.js",
+  "/gsap": "pages/gsap.js",
+  "/flip": "pages/flip.js",
+  "/": "pages/index.js"
+}

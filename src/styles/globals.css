@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: black;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.reveal-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.reveal-text span {
+  will-change: transform, opacity;
+}
+
+/* GSAP Flip Layouts */
+.single-layout {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.grid-layout {
+  --row: calc(var(--index) / 3);
+  --col: calc(var(--index) % 3);
+  left: calc(50% + (var(--col) - 1) * 150px);
+  top: calc(50% + (var(--row) - 1) * 150px);
+  transform: translate(-50%, -50%);
+}
+
+.circle-layout {
+  --angle: calc(var(--index) * 40deg);
+  left: calc(50% + cos(var(--angle)) * 200px);
+  top: calc(50% + sin(var(--angle)) * 200px);
+  transform: translate(-50%, -50%);
+}
